@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Copse);
+
+*{
+  background-color: #A8B2BA;
+  font-family: 'Copse', serif
+}
+body{
+  padding-left:20px;
+}
+
+h1{
+  font-size: 2.8em;
+  color:#333;
+  text-shadow: 1px 1px #fff;
+  margin-bottom: 0px;
+  display: inline-block;
+  padding-right: 20px
+}
+a{
+  color:#00549B;
+}
+span{
+  font-size: 0.9em;
+}
+button {
+  font-size: 1em;
+  padding:6px;
+  color: white;
+  background-color: #777;
+  box-shadow: 1px 1px #555;
+  border: none;
+}
+button:hover {
+  background-color: #999;
+}
+
+#run{
+  margin-left: 20px
+}
+
+#control{
+  padding-bottom:10px
+}
+
+.control-box{
+  display:inline-block;
+  padding-right:10px;
+}
+
+/*
+  SELECT BOX
+*/
+select {
+  border: 2px solid #777;
+  width: 120px;
+  padding: 5px 8px;
+  font-size: 1em;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+output {
+  border-radius: 3px;
+  width:100px;
+  color: #333;
+  font-size: 1em;
+}
+
+
+/*
+  FILE INPUT
+*/
+#input {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#input + label {
+  font-size: 1em;
+  padding:6px;
+  color: white;
+  background-color: #777;
+  display: inline-block;
+  box-shadow: 1px 1px #555;
+}
+#input:focus + label,
+#input + label:hover {
+  background-color: #999;
+}
+#input:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}

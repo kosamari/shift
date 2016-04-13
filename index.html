@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>shift</title>
+  <link href='shift.css' rel='stylesheet' type='text/css'>
+  <meta name="description" content=".">
+</head>
+<body>
+  <h1>shift.</h1>
+  <span>faux tilt shift, an experiment.</span>
+  <p>Select an Image, click on 2 points on the image to create focus area, then click Process Image.<br> Made by <a href="https://twitter.com/kosamari">@kosamari</a>. Code on <a href="https://github.com/kosamari/fokus">github</a>. For adding shadow, check out <a href="http://kosamari.github.io/fokus/" title="">focus.</a></p>
+
+  <div id="control">
+    <div class="control-box">
+      <input type="file" name="file" id="input" accept="image/*">
+      <label for="input">Choose an Image</label>
+      <button type="" id="run">Process Image</button>
+      <button type="" id="reset">Reset</button>
+    </div>
+
+    <div class="control-box">
+      <select id="file" name="select">
+        <option value="image/png">PNG</option>
+        <option value="image/jpeg">JPEG</option>
+        <option value="image/gif">GIF</option>
+      </select>
+      <button id="download">Download</button>
+      <a id="a" hidden></a>
+    </div>
+  </div>
+
+  <canvas id='canvas'></canvas>
+  <canvas id='canvas-ref' hidden></canvas>
+
+  <script src="shift.js" type="text/javascript"></script>
+</body>
+</html>
